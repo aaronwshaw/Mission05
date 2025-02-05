@@ -1,6 +1,25 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Price Calculator";
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<p>Calculate how much your next snowboarding lesson will cost</p>
+
+<div>
+    <label for="hours">Enter Hours Needed:</label>
+    <input type="number" id="hours" name="hours" min="1" placeholder="Enter a positive number">
+</div>
+
+<div>
+    <label for="rate">Hourly Rate ($):</label>
+    <input type="text" id="rate" value="20" disabled> <!-- Fixed hourly rate -->
+</div>
+
+<div>
+    <button id="calculate">Calculate Total</button>
+</div>
+
+<div>
+    <label for="total">Total Cost:</label>
+    <input type="text" id="total" disabled> <!-- Output box for total -->
+</div>
