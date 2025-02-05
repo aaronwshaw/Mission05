@@ -3,6 +3,7 @@
 
 // Write your JavaScript code.
 
+//This will calculate total rate based on the number of hours inputted
 $(document).ready(function () {
     $('#calculate').click(function () {
         var hours = $('#hours').val(); // Get the value from the hours input
